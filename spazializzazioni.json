@@ -1,0 +1,295 @@
+{
+	"version": 2,
+	"map": {
+		"center": {
+			"x": 10.9478759765625,
+			"y": 43.464880828929545,
+			"crs": "EPSG:4326"
+		},
+		"maxExtent": [-20037508.34, -20037508.34, 20037508.34, 20037508.34],
+		"projection": "EPSG:3857",
+		"units": "m",
+		"zoom": 8,
+		"layers": [{
+				"group": "background",
+				"source": "osm",
+				"name": "mapnik",
+				"title": "Open Street Map",
+				"type": "osm",
+				"visibility": true,
+				"singleTile": false
+			}, {
+				"group": "background",
+				"source": "google",
+				"name": "HYBRID",
+				"title": "Google HYBRID",
+				"type": "google",
+				"visibility": false,
+				"singleTile": false
+			}, {
+				"group": "background",
+				"source": "mapquest",
+				"name": "osm",
+				"title": "MapQuest OSM",
+				"type": "mapquest",
+				"visibility": false,
+				"singleTile": false
+			}, {
+				"group": "background",
+				"source": "nasagibs",
+				"name": "Night2012",
+				"provider": "NASAGIBS.ViirsEarthAtNight2012",
+				"title": "NASAGIBS Night 2012",
+				"type": "tileprovider",
+				"visibility": false,
+				"singleTile": false
+			}, {
+				"group": "background",
+				"source": "OpenTopoMap",
+				"name": "OpenTopoMap",
+				"provider": "OpenTopoMap",
+				"title": "OpenTopoMap",
+				"type": "tileprovider",
+				"visibility": false,
+				"singleTile": false
+			}, {
+				"group": "Spazializzazioni",
+				"name": "Umid",
+				"opacity": 0.4989,
+				"title": "Umid",
+				"type": "wms",
+				"url": "http://172.16.1.146/cgi-bin/mapserv?",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.68333",
+						"miny": "42.1313",
+						"maxx": "12.475",
+						"maxy": "44.575"
+					}
+				},
+				"visibility": false,
+				"singleTile": false,
+				"params": {
+					"map": "spazializzazioni",
+					"data": "2000-08-01"
+				}
+			}, {
+				"group": "Spazializzazioni",
+				"name": "Vven",
+				"opacity": 0.499,
+				"title": "Vven",
+				"type": "wms",
+				"url": "http://172.16.1.146/cgi-bin/mapserv?",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.68333",
+						"miny": "42.1313",
+						"maxx": "12.475",
+						"maxy": "44.575"
+					}
+				},
+				"visibility": false,
+				"singleTile": false,
+				"params": {
+					"map": "spazializzazioni",
+					"data": "2000-08-01"
+				}
+			}, {
+				"group": "Spazializzazioni",
+				"name": "Prec",
+				"opacity": 0.5014,
+				"title": "Prec",
+				"type": "wms",
+				"url": "http://172.16.1.146/cgi-bin/mapserv?",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.68333",
+						"miny": "42.1313",
+						"maxx": "12.475",
+						"maxy": "44.575"
+					}
+				},
+				"visibility": false,
+				"singleTile": false,
+				"params": {
+					"map": "spazializzazioni",
+					"data": "2000-08-01"
+				}
+			}, {
+				"group": "Spazializzazioni",
+				"name": "Tmin",
+				"opacity": 0.4989,
+				"title": "Tmin",
+				"type": "wms",
+				"url": "http://172.16.1.146/cgi-bin/mapserv?",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.68333",
+						"miny": "42.1313",
+						"maxx": "12.475",
+						"maxy": "44.575"
+					}
+				},
+				"visibility": false,
+				"singleTile": false,
+				"params": {
+					"map": "spazializzazioni",
+					"data": "2000-08-01"
+				}
+			}, {
+				"group": "Spazializzazioni",
+				"name": "Tmax",
+				"opacity": 0.499,
+				"title": "Tmax",
+				"type": "wms",
+				"url": "http://172.16.1.146/cgi-bin/mapserv?",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.68333",
+						"miny": "42.1313",
+						"maxx": "12.475",
+						"maxy": "44.575"
+					}
+				},
+				"visibility": true,
+				"singleTile": false,
+				"params": {
+					"map": "spazializzazioni",
+					"data": "2000-08-01"
+				}
+			}, {
+				"group": "Aree di allerta meteo",
+				"name": "Aree_Allerta_Media",
+				"title": "Media",
+				"type": "wms",
+				"url": "http://172.16.1.146/cgi-bin/mapserv?",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.68333",
+						"miny": "42.1313",
+						"maxx": "12.475",
+						"maxy": "44.575"
+					}
+				},
+				"visibility": false,
+				"singleTile": false,
+				"params": {
+					"map": "spazializzazioni",
+					"data": "2000-08-01"
+				}
+			}, {
+				"group": "Aree di allerta meteo",
+				"name": "Aree_Allerta_Massimo",
+				"title": "Massimo",
+				"type": "wms",
+				"url": "http://172.16.1.146/cgi-bin/mapserv?",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.68333",
+						"miny": "42.1313",
+						"maxx": "12.475",
+						"maxy": "44.575"
+					}
+				},
+				"visibility": false,
+				"singleTile": false,
+				"params": {
+					"map": "spazializzazioni",
+					"data": "2000-08-01"
+				}
+			}, {
+				"group": "Stazioni",
+				"name": "Vven_stazioni",
+				"title": "Velocita vento",
+				"type": "wms",
+				"url": "http://172.16.1.146/cgi-bin/mapserv?",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.68333",
+						"miny": "42.1313",
+						"maxx": "12.475",
+						"maxy": "44.575"
+					}
+				},
+				"visibility": false,
+				"singleTile": true,
+				"params": {
+					"map": "spazializzazioni",
+					"data": "2000-08-01"
+				}
+			}, {
+				"group": "Stazioni",
+				"name": "Prec_stazioni",
+				"title": "Precipitazione",
+				"type": "wms",
+				"url": "http://172.16.1.146/cgi-bin/mapserv?",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.68333",
+						"miny": "42.1313",
+						"maxx": "12.475",
+						"maxy": "44.575"
+					}
+				},
+				"visibility": false,
+				"singleTile": true,
+				"params": {
+					"map": "spazializzazioni",
+					"data": "2000-08-01"
+				}
+			}, {
+				"group": "Stazioni",
+				"name": "Tmin_stazioni",
+				"title": "Temp. min.",
+				"type": "wms",
+				"url": "http://172.16.1.146/cgi-bin/mapserv?",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.68333",
+						"miny": "42.1313",
+						"maxx": "12.475",
+						"maxy": "44.575"
+					}
+				},
+				"visibility": false,
+				"singleTile": true,
+				"params": {
+					"map": "spazializzazioni",
+					"data": "2000-08-01"
+				}
+			}, {
+				"group": "Stazioni",
+				"name": "Tmax_stazioni",
+				"opacity": 1,
+				"title": "Temp. max.",
+				"type": "wms",
+				"url": "http://172.16.1.146/cgi-bin/mapserv?",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.68333",
+						"miny": "42.1313",
+						"maxx": "12.475",
+						"maxy": "44.575"
+					}
+				},
+				"visibility": true,
+				"singleTile": true,
+				"params": {
+					"map": "spazializzazioni",
+					"data": "2000-08-01"
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,339 @@
+{
+	"version": 2,
+	"map": {
+		"center": {
+			"x": 10.9478759765625,
+			"y": 43.464880828929545,
+			"crs": "EPSG:4326"
+		},
+		"maxExtent": [-20037508.34, -20037508.34, 20037508.34, 20037508.34],
+		"projection": "EPSG:3857",
+		"units": "m",
+		"zoom": 8,
+		"layers": [{
+				"group": "background",
+				"source": "osm",
+				"name": "mapnik",
+				"title": "Open Street Map",
+				"type": "osm",
+				"visibility": false,
+				"singleTile": false
+			}, {
+				"group": "background",
+				"source": "google",
+				"name": "HYBRID",
+				"title": "Google HYBRID",
+				"type": "google",
+				"visibility": true,
+				"singleTile": false
+			}, {
+				"group": "background",
+				"source": "mapquest",
+				"name": "osm",
+				"title": "MapQuest OSM",
+				"type": "mapquest",
+				"visibility": false,
+				"singleTile": false
+			}, {
+				"group": "background",
+				"source": "nasagibs",
+				"name": "Night2012",
+				"provider": "NASAGIBS.ViirsEarthAtNight2012",
+				"title": "NASAGIBS Night 2012",
+				"type": "tileprovider",
+				"visibility": false,
+				"singleTile": false
+			}, {
+				"group": "background",
+				"source": "OpenTopoMap",
+				"name": "OpenTopoMap",
+				"provider": "OpenTopoMap",
+				"title": "OpenTopoMap",
+				"type": "tileprovider",
+				"visibility": false,
+				"singleTile": false
+			}, {
+				"group": "Spazializzazioni",
+				"name": "Prec",
+				"opacity": 0.5014,
+				"title": "Prec",
+				"type": "wms",
+				"url": "http://172.16.1.146/cgi-bin/mapserv?map=spazializzazioni",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.68333",
+						"miny": "42.1313",
+						"maxx": "12.475",
+						"maxy": "44.575"
+					}
+				},
+				"visibility": false,
+				"singleTile": false,
+				"params": {
+					"map": "spazializzazioni"
+				}
+			}, {
+        "group": "Bilancio idrico",
+				"name": "Bilancio Idrico Semplificato",
+				"title": "Bilancio Idrico Semplificato",
+				"type": "wms",
+				"url": "http://geoportale.lamma.rete.toscana.it/",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.66344",
+						"miny": "42.2098",
+						"maxx": "12.4132",
+						"maxy": "44.4742"
+					}
+				},
+				"visibility": false,
+				"singleTile": false,
+				"params": {
+					"map": "lamma"
+				}
+			}, {
+        "group": "EDI",
+				"name": "Edi",
+				"title": "Edi",
+				"type": "wms",
+				"url": "http://geoportale.lamma.rete.toscana.it/",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.66344",
+						"miny": "42.2098",
+						"maxx": "12.4132",
+						"maxy": "44.4742"
+					}
+				},
+				"visibility": false,
+				"singleTile": false,
+				"params": {
+					"map": "lamma"
+				}
+			}, {
+        "group": "SDI",
+				"name": "sdi_12mesi",
+				"title": "SDI 12 mesi",
+				"type": "wms",
+				"url": "http://geoportale.lamma.rete.toscana.it/",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.66344",
+						"miny": "42.2098",
+						"maxx": "12.4132",
+						"maxy": "44.4742"
+					}
+				},
+				"visibility": false,
+				"singleTile": false,
+				"params": {
+					"map": "lamma"
+				}
+			}, {
+        "group": "SDI",
+				"name": "sdi_3mesi",
+				"title": "SDI 3 mesi",
+				"type": "wms",
+				"url": "http://geoportale.lamma.rete.toscana.it/",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.66344",
+						"miny": "42.2098",
+						"maxx": "12.4132",
+						"maxy": "44.4742"
+					}
+				},
+				"visibility": false,
+				"singleTile": false,
+				"params": {
+					"map": "lamma"
+				}
+			}, {
+        "group": "Variabili Meteo.Pioggia",
+				"name": "pioggia_anomalia_millimetri",
+				"title": "Pioggia Anomalia Millimetri",
+				"type": "wms",
+				"url": "http://geoportale.lamma.rete.toscana.it/",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.66344",
+						"miny": "42.2098",
+						"maxx": "12.4132",
+						"maxy": "44.4742"
+					}
+				},
+				"visibility": false,
+				"singleTile": false,
+				"params": {
+					"map": "lamma"
+				}
+			}, {
+        "group": "Variabili Meteo.Pioggia",
+				"name": "pioggia_anomalia_percentuale",
+				"title": "Pioggia Anomalia Percentuale",
+				"type": "wms",
+				"url": "http://geoportale.lamma.rete.toscana.it/",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.66344",
+						"miny": "42.2098",
+						"maxx": "12.4132",
+						"maxy": "44.4742"
+					}
+				},
+				"visibility": false,
+				"singleTile": false,
+				"params": {
+					"map": "lamma"
+				}
+			}, {
+        "group": "Variabili Meteo.Pioggia",
+				"name": "pioggia_cumulata",
+				"title": "Pioggia Cumulata",
+				"type": "wms",
+				"url": "http://geoportale.lamma.rete.toscana.it/",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.66344",
+						"miny": "42.2098",
+						"maxx": "12.4132",
+						"maxy": "44.4742"
+					}
+				},
+				"visibility": false,
+				"singleTile": false,
+				"params": {
+					"map": "lamma"
+				}
+			}, {
+        "group": "Layer di base.Corpi idrici sotterranei",
+				"name": "cis_roccia",
+				"title": "In roccia",
+				"type": "wms",
+				"url": "http://www506.regione.toscana.it/geoserver/geobasi_test/ows",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.66344",
+						"miny": "42.2098",
+						"maxx": "12.4132",
+						"maxy": "44.4742"
+					}
+				},
+				"visibility": false,
+				"singleTile": false,
+				"params": {
+					"map": "lamma"
+				}
+			}, {
+        "group": "Layer di base.Corpi idrici sotterranei",
+				"name": "cis_alluvioni",
+				"title": "Alluvionali",
+				"type": "wms",
+				"url": "http://www506.regione.toscana.it/geoserver/geobasi_test/ows",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.66344",
+						"miny": "42.2098",
+						"maxx": "12.4132",
+						"maxy": "44.4742"
+					}
+				},
+				"visibility": false,
+				"singleTile": false,
+				"params": {
+					"map": "lamma"
+				}
+			}, {
+        "group": "Layer di base.Bacini",
+				"name": "bacini_igg",
+				"title": "Bacini IGG",
+				"type": "wms",
+				"url": "http://geoportale.lamma.rete.toscana.it/",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.66344",
+						"miny": "42.2098",
+						"maxx": "12.4132",
+						"maxy": "44.4742"
+					}
+				},
+				"visibility": false,
+				"singleTile": false,
+				"params": {
+					"map": "lamma"
+				}
+			}, {
+        "group": "Layer di base.Bacini",
+				"name": "bacini_ait",
+				"title": "Bacini di interesse AIT",
+				"type": "wms",
+				"url": "http://geoportale.lamma.rete.toscana.it/",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.66344",
+						"miny": "42.2098",
+						"maxx": "12.4132",
+						"maxy": "44.4742"
+					}
+				},
+				"visibility": false,
+				"singleTile": false,
+				"params": {
+					"map": "lamma"
+				}
+			}, {
+        "group": "Layer di base.Bacini",
+				"name": "bacino_bilancino",
+				"title": "Bacino Bilancino",
+				"type": "wms",
+				"url": "http://geoportale.lamma.rete.toscana.it/",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.66344",
+						"miny": "42.2098",
+						"maxx": "12.4132",
+						"maxy": "44.4742"
+					}
+				},
+				"visibility": false,
+				"singleTile": false,
+				"params": {
+					"map": "lamma"
+				}
+			}, {
+        "group": "Layer di base.Bacini",
+				"name": "bacino_montedoglio",
+				"title": "Bacino Montedoglio",
+				"type": "wms",
+				"url": "http://geoportale.lamma.rete.toscana.it/",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"bounds": {
+						"minx": "9.66344",
+						"miny": "42.2098",
+						"maxx": "12.4132",
+						"maxy": "44.4742"
+					}
+				},
+				"visibility": false,
+				"singleTile": false,
+				"params": {
+					"map": "lamma"
+				}
+			}
+		]
+	}
+}
